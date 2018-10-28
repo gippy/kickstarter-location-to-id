@@ -22,16 +22,20 @@ Apify.main(async () => {
 
     const commonHeaders = {
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-
     };
+
+    const sessionLength = 8;
+    const proxy = Apify.getApifyProxyUrl({
+        session: `ks${Math.floor(Math.random() * (10 ** sessionLength)).toString().padStart(sessionLength, '0')}`,
+    }); 
 
     // Prepare cookie jar so that the second request contains cookies from the first one
     const cookieJar = request.jar()
-    const requestWithCookies = request.defaults({ jar: cookieJar })
+    const preparedRequest = request.defaults({ jar: cookieJar, proxy })
 
     // Query the url and load csrf token from it
     const url = 'https://www.kickstarter.com/discover/advanced?ref=nav_search&result=all&term=game';
-    const html = await requestWithCookies({
+    const html = await preparedRequest({
         url,
         headers: { ...commonHeaders },
     });
@@ -42,7 +46,7 @@ Apify.main(async () => {
     if (!csrfToken) crash('Could not load CSRF token. Try again.');
 
     // Query the kickstarter location search page with the correct csrf token and cookies
-    const response = await requestWithCookies({
+    const response = await preparedRequest({
         url: `https://www.kickstarter.com/locations/search?searchable=true&term=${query}`,
         headers: {
             accept: 'application/json, text/javascript, */*; q=0.01',

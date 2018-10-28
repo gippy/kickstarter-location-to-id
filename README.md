@@ -5,6 +5,8 @@ as an input a name of a location (eq. "Prague"), queries Kickstarter's places js
 output's a list of up to 10 found locations with their ID's. It also stores additional details about found locations
 in a json file called OUTPUT in Key Value store.
 
+**This Actor requires proxy to work properly, please check that you have access to Apify Proxy, before you try to run it.**
+
 ## INPUT
 
 Input of this actor should be JSON containing a single property called `query` with a string value

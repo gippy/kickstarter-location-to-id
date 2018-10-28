@@ -4,7 +4,7 @@
     "schemaVersion": 1,
     "properties": {
         "query": {
-            "title": "query",
+            "title": "Query",
             "type": "string",
             "description": "Location to search for",
             "default": "Prague",
