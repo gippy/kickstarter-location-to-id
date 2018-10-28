@@ -2,8 +2,8 @@
 
 To query kickstarter by location you need to know the ID of the location, this Actor takes
 as an input a name of a location (eq. "Prague"), queries Kickstarter's places json endpoint and
-output's a list of upto 10 found location with their ID's. It also stores additional details
-in json file called OUTPUT in Key Value store.
+output's a list of up to 10 found locations with their ID's. It also stores additional details about found locations
+in a json file called OUTPUT in Key Value store.
 
 ## INPUT
 
