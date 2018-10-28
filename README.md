@@ -27,19 +27,43 @@ When the Actor finishes it will create and `OUTPUT` file containing the addition
 
 The structure of this output is:
 ```
-locations - Array
-    - 0 - Object
-        - id - Number
-        - name - String
-        - slug - String
-        - short_name - String
-        - displayable_name - String
-        - localized_name - String
-        - country - String
-        - state - String
-        - type - String
-        - is_root - Boolean
-        - urls - Object
+locations (Array)
+    - 0 (Object)
+        - id (Number)
+        - name (String)
+        - slug (String)
+        - short_name (String)
+        - displayable_name (String)
+        - localized_name (String)
+        - country (String)
+        - state (String)
+        - type (String)
+        - is_root (Boolean)
+        - urls (Object)
+    - 1 (Object)
+        - ...
     - ...
-total_hits - Number
+total_hits (Number)
+```
+
+Example JSON of one location:
+```json
+{
+    "id": 796597,
+    "name": "Prague",
+    "slug": "prague-prague-prague",
+    "short_name": "Prague, Czech Republic",
+    "displayable_name": "Prague, Czech Republic",
+    "localized_name": "Prague",
+    "country": "CZ",
+    "state": "Prague",
+    "type": "Town",
+    "is_root": false,
+    "urls": {
+        "web": {
+            "discover": "https://www.kickstarter.com/discover/places/prague-prague-prague",
+            "location": "https://www.kickstarter.com/locations/prague-prague-prague"
+        },
+    }
+}
 ```
