@@ -8,15 +8,20 @@
 		"cheerio": "^1.0.0-rc.2",
 		"request-promise": "^4.2.2"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"eslint": "^5.8.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.2",
+		"eslint-plugin-react": "^7.11.1"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/gippy/kickstart-location-to-id.git"
 	},
-	"author": "",
-	"license": "ISC",
-	"homepage": ""
+	"author": "Jaroslav Hejlek",
+	"license": "ISC"
 }

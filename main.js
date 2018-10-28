@@ -1,7 +1,6 @@
 const Apify = require('apify');
 const request = require('request-promise');
 const cheerio = require('cheerio');
-const zlib = require('zlib');
 
 /**
  * Helper function which writes provided message into console log and then
