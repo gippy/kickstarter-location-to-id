@@ -1,0 +1,15 @@
+{
+    "title": "Input schema for Kickstarter location search actor",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "query": {
+            "title": "query",
+            "type": "string",
+            "description": "Location to search for",
+            "default": "Prague",
+            "editor": "textfield"
+        }
+    },
+    "required": ["query"]
+}
