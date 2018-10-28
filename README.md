@@ -1,4 +1,4 @@
-#Actor - Kickstarter location to places
+# Actor - Kickstarter location to places
 
 To query kickstarter by location you need to know the ID of the location, this Actor takes
 as an input a name of a location (eq. "Prague"), queries Kickstarter's places json endpoint and
@@ -21,7 +21,7 @@ For example:
 While the Actor is running it will output either error message or the list of the found location.
 If the Actor fails with an error, then the error is immediately outputed and the process is ended.
 
-# OUTPUT
+## OUTPUT
 
 When the Actor finishes it will create and `OUTPUT` file containing the additional details about each found location:
 
