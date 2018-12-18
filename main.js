@@ -36,7 +36,7 @@ Apify.main(async () => {
     const preparedRequest = request.defaults({ jar: cookieJar });
 
     // Query the url and load csrf token from it
-    const url = 'https://www.kickstarter.com/discover/advanced?ref=nav_search&result=all&term=game';
+    const url = 'https://www.kickstarter.com/discover/advanced?result=all&term=game';
     const html = await preparedRequest({
         url,
         headers: { ...commonHeaders },
