@@ -17,7 +17,7 @@
           "location": "https://www.kickstarter.com/locations/prague-prague-prague"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.36d9ba160197007b327d2b2c999d7be618d78be5&woe_id=796597"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.85a639e94414be6f1771fdbffddd1d76c7a8cf6c&woe_id=796597"
         }
       }
     },
@@ -38,7 +38,7 @@
           "location": "https://www.kickstarter.com/locations/the-hague-nl"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.7b784a768cb748e2aef3833672df85ebedd962ac&woe_id=726874"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.f917c243ea5708f328d16bfc141e5f887674ba6d&woe_id=726874"
         }
       }
     },
@@ -59,7 +59,7 @@
           "location": "https://www.kickstarter.com/locations/managua-ni"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.70569a9b424759cc07b4e904108d19d63e70002e&woe_id=153523"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.c179fd21f3f28c88f31003d4426fbaf210aef5c3&woe_id=153523"
         }
       }
     },
@@ -80,7 +80,7 @@
           "location": "https://www.kickstarter.com/locations/prague-11-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.e94f2d3c8010fed34121ce843f11df55fd3441d4&woe_id=23407534"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.ff3bdf8e5c787493d313f22c8f8bf3651052f4ea&woe_id=23407534"
         }
       }
     },
@@ -101,7 +101,7 @@
           "location": "https://www.kickstarter.com/locations/prague-8-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.33e945383bb2e9cc0c3255fea6f4f035bf3cc223&woe_id=23407541"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.ea41a002f219e9809c49ee88ca65899dde460441&woe_id=23407541"
         }
       }
     },
@@ -122,7 +122,7 @@
           "location": "https://www.kickstarter.com/locations/prague-6-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.c89e8a8d8fca39f54e4e522bfaedd8bb5fbd4948&woe_id=23406420"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.12d2b7bdd6aa1b9e3659c68b0b83049c70e24d2e&woe_id=23406420"
         }
       }
     },
@@ -143,7 +143,7 @@
           "location": "https://www.kickstarter.com/locations/prague-9-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.9fc12bc50434f21a7ffb8251cb38271bce813b33&woe_id=23406421"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.d0e61f3e9f700cf1da7cdfa9d8de5e4e911148f8&woe_id=23406421"
         }
       }
     },
@@ -164,7 +164,7 @@
           "location": "https://www.kickstarter.com/locations/prague-16-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.017675a3197747c37a15d782e9b154d796f34a95&woe_id=24928613"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.ea8fce5457685f0bb650be076752133cb2256d1b&woe_id=24928613"
         }
       }
     },
@@ -185,7 +185,7 @@
           "location": "https://www.kickstarter.com/locations/prague-18-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.4253d37daafdd032bea95bf6f8721b2c42474958&woe_id=24928616"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.e708c64f55be5e1f83b2136d812bd1e470afcaa2&woe_id=24928616"
         }
       }
     },
@@ -206,7 +206,7 @@
           "location": "https://www.kickstarter.com/locations/prague-3-prague-cz"
         },
         "api": {
-          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.1e2a986dc19d02e579d60101f8f53b6e3a76b9f9&woe_id=23407538"
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545237246.69640e1e3014db431380c770b2c8ce297df122d2&woe_id=23407538"
         }
       }
     }
