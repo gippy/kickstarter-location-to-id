@@ -1,0 +1,215 @@
+{
+  "locations": [
+    {
+      "id": 796597,
+      "name": "Prague",
+      "slug": "prague-prague-prague",
+      "short_name": "Prague, Czech Republic",
+      "displayable_name": "Prague, Czech Republic",
+      "localized_name": "Prague",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Town",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-prague-prague",
+          "location": "https://www.kickstarter.com/locations/prague-prague-prague"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.36d9ba160197007b327d2b2c999d7be618d78be5&woe_id=796597"
+        }
+      }
+    },
+    {
+      "id": 726874,
+      "name": "The Hague",
+      "slug": "the-hague-nl",
+      "short_name": "The Hague, Netherlands",
+      "displayable_name": "The Hague, Netherlands",
+      "localized_name": "The Hague",
+      "country": "NL",
+      "state": "South Holland",
+      "type": "Town",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/the-hague-nl",
+          "location": "https://www.kickstarter.com/locations/the-hague-nl"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.7b784a768cb748e2aef3833672df85ebedd962ac&woe_id=726874"
+        }
+      }
+    },
+    {
+      "id": 153523,
+      "name": "Managua",
+      "slug": "managua-ni",
+      "short_name": "Managua, Nicaragua",
+      "displayable_name": "Managua, Nicaragua",
+      "localized_name": "Managua",
+      "country": "NI",
+      "state": "Managua",
+      "type": "Town",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/managua-ni",
+          "location": "https://www.kickstarter.com/locations/managua-ni"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.70569a9b424759cc07b4e904108d19d63e70002e&woe_id=153523"
+        }
+      }
+    },
+    {
+      "id": 23407534,
+      "name": "Prague 11",
+      "slug": "prague-11-prague-cz",
+      "short_name": "Prague 11, Czech Republic",
+      "displayable_name": "Prague 11, Czech Republic",
+      "localized_name": "Prague 11",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-11-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-11-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.e94f2d3c8010fed34121ce843f11df55fd3441d4&woe_id=23407534"
+        }
+      }
+    },
+    {
+      "id": 23407541,
+      "name": "Prague 8",
+      "slug": "prague-8-prague-cz",
+      "short_name": "Prague 8, Czech Republic",
+      "displayable_name": "Prague 8, Czech Republic",
+      "localized_name": "Prague 8",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-8-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-8-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.33e945383bb2e9cc0c3255fea6f4f035bf3cc223&woe_id=23407541"
+        }
+      }
+    },
+    {
+      "id": 23406420,
+      "name": "Prague 6",
+      "slug": "prague-6-prague-cz",
+      "short_name": "Prague 6, Czech Republic",
+      "displayable_name": "Prague 6, Czech Republic",
+      "localized_name": "Prague 6",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-6-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-6-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.c89e8a8d8fca39f54e4e522bfaedd8bb5fbd4948&woe_id=23406420"
+        }
+      }
+    },
+    {
+      "id": 23406421,
+      "name": "Prague 9",
+      "slug": "prague-9-prague-cz",
+      "short_name": "Prague 9, Czech Republic",
+      "displayable_name": "Prague 9, Czech Republic",
+      "localized_name": "Prague 9",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-9-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-9-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.9fc12bc50434f21a7ffb8251cb38271bce813b33&woe_id=23406421"
+        }
+      }
+    },
+    {
+      "id": 24928613,
+      "name": "Prague 16",
+      "slug": "prague-16-prague-cz",
+      "short_name": "Prague 16, Czech Republic",
+      "displayable_name": "Prague 16, Czech Republic",
+      "localized_name": "Prague 16",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-16-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-16-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.017675a3197747c37a15d782e9b154d796f34a95&woe_id=24928613"
+        }
+      }
+    },
+    {
+      "id": 24928616,
+      "name": "Prague 18",
+      "slug": "prague-18-prague-cz",
+      "short_name": "Prague 18, Czech Republic",
+      "displayable_name": "Prague 18, Czech Republic",
+      "localized_name": "Prague 18",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-18-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-18-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.4253d37daafdd032bea95bf6f8721b2c42474958&woe_id=24928616"
+        }
+      }
+    },
+    {
+      "id": 23407538,
+      "name": "Prague 3",
+      "slug": "prague-3-prague-cz",
+      "short_name": "Prague 3, Czech Republic",
+      "displayable_name": "Prague 3, Czech Republic",
+      "localized_name": "Prague 3",
+      "country": "CZ",
+      "state": "Prague",
+      "type": "Suburb",
+      "is_root": false,
+      "urls": {
+        "web": {
+          "discover": "https://www.kickstarter.com/discover/places/prague-3-prague-cz",
+          "location": "https://www.kickstarter.com/locations/prague-3-prague-cz"
+        },
+        "api": {
+          "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1545234727.1e2a986dc19d02e579d60101f8f53b6e3a76b9f9&woe_id=23407538"
+        }
+      }
+    }
+  ],
+  "total_hits": 120140
+}

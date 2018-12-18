@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 /**
  * Helper function which writes provided message into console log and then
  * exists the process with failure code.
- * 
+ *
  * @param {String} errorMessage Message to be written into console log
  */
 function crash(errorMessage) {
@@ -17,21 +17,23 @@ Apify.main(async () => {
     // Load query from input
     const input = await Apify.getValue('INPUT');
     if (!input) crash('Key-value store does not contain INPUT.');
-    const { query } = input; 
+    const { query } = input;
     if (!query || typeof query !== 'string') crash('Query loaded from INPUT is empty or not a string.');
 
     const commonHeaders = {
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
     };
 
+    /*
     const sessionLength = 8;
     const proxy = Apify.getApifyProxyUrl({
         session: `ks${Math.floor(Math.random() * (10 ** sessionLength)).toString().padStart(sessionLength, '0')}`,
-    }); 
+    });
+    */
 
     // Prepare cookie jar so that the second request contains cookies from the first one
-    const cookieJar = request.jar()
-    const preparedRequest = request.defaults({ jar: cookieJar, proxy })
+    const cookieJar = request.jar();
+    const preparedRequest = request.defaults({ jar: cookieJar });
 
     // Query the url and load csrf token from it
     const url = 'https://www.kickstarter.com/discover/advanced?ref=nav_search&result=all&term=game';
