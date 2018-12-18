@@ -77,7 +77,7 @@ Apify.main(async () => {
             console.log(error.message);
             response = null;
             attempts--;
-            await new Promise((resolve) => setTimeout(resolve, 100));
+            await new Promise((resolve) => setTimeout(resolve, 500));
         }
     } while (attempts > 0 && !response);
 });
