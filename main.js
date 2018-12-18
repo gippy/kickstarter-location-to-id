@@ -28,9 +28,15 @@ Apify.main(async () => {
     let response;
     do {
         try {
+            const sessionLength = 8;
+            const proxy = Apify.getApifyProxyUrl({
+                session: `ks${Math.floor(Math.random() * (10 ** sessionLength)).toString().padStart(sessionLength, '0')}`,
+            });
+
             // Prepare cookie jar so that the second request contains cookies from the first one
             const cookieJar = request.jar();
-            const preparedRequest = request.defaults({ jar: cookieJar });
+            const preparedRequest = request.defaults({ jar: cookieJar, proxy });
+
 
             // Query the url and load csrf token from it
             const url = 'https://www.kickstarter.com/discover/advanced?result=all&term=game';
