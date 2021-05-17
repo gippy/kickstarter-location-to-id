@@ -1,6 +1,5 @@
+/* eslint-disable linebreak-style */
 const Apify = require('apify');
-const request = require('request-promise');
-const cheerio = require('cheerio');
 
 /**
  * Helper function which writes provided message into console log and then
@@ -19,49 +18,27 @@ Apify.main(async () => {
     if (!input) crash('Key-value store does not contain INPUT.');
     const { query } = input;
     if (!query || typeof query !== 'string') crash('Query loaded from INPUT is empty or not a string.');
-
-    const commonHeaders = {
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-    };
-
     let attempts = 20;
     let response;
     do {
         try {
-            const sessionLength = 8;
-            const proxy = Apify.getApifyProxyUrl({
-                session: `ks${Math.floor(Math.random() * (10 ** sessionLength)).toString().padStart(sessionLength, '0')}`,
-            });
-
-            // Prepare cookie jar so that the second request contains cookies from the first one
-            const cookieJar = request.jar();
-            const preparedRequest = request.defaults({ jar: cookieJar, proxy });
-
-
-            // Query the url and load csrf token from it
-            const url = 'https://www.kickstarter.com/discover/advanced?result=all&term=game';
-            const html = await preparedRequest({
-                url,
-                headers: { ...commonHeaders },
-            });
-
-            const $ = cheerio.load(html);
-            const csrfToken = $('meta[name="csrf-token"]').attr('content');
-
-            if (!csrfToken) crash('Could not load CSRF token. Try again.');
-
-            // Query the kickstarter location search page with the correct csrf token and cookies
-            response = await preparedRequest({
+            const proxyConfiguration = await Apify.createProxyConfiguration();
+            // Query the kickstarter location search page
+            console.log(`making request to https://www.kickstarter.com/locations/search?searchable=true&term=${query}`);
+            const { body } = await Apify.utils.requestAsBrowser({
                 url: `https://www.kickstarter.com/locations/search?searchable=true&term=${query}`,
+                proxyUrl: proxyConfiguration.newUrl(),
                 headers: {
-                    accept: 'application/json, text/javascript, */*; q=0.01',
-                    'accept-language': 'en;q=0.9',
-                    referer: url,
-                    'x-csrf-token': csrfToken,
-                    'x-requested-with': 'XMLHttpRequest',
+                    // eslint-disable-next-line max-len
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
+                    accept: 'application/json',
+                    Connection: 'keep-alive',
+                    'Accept-Encoding': 'gzip, deflate, br',
                 },
-                json: true,
             });
+            response = JSON.parse(body);
+            // console.info('response:');
+            // console.dir(response);
 
             if (!response.locations) crash('Response does not contain locations. Try again.');
 
@@ -73,7 +50,7 @@ Apify.main(async () => {
 
             console.log('Found places:');
             places.forEach((place, i) => {
-                console.log(`${(i+1).toString().padStart(2, '0')}) ${place.id.toString().padStart(8, ' ')}: ${place.name}`);
+                console.log(`${(i + 1).toString().padStart(2, '0')}) ${place.id.toString().padStart(8, ' ')}: ${place.name}`);
             });
 
             if (response.total_hits > 10) console.log(`Found ${response.total_hits - 1} other locations, refine your search to get clearer results`);

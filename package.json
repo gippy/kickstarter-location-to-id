@@ -4,9 +4,7 @@
 	"description": "Actor which takes a location name as an input and outputs list of found locations with IDs usable in kickstarter search.",
 	"main": "main.js",
 	"dependencies": {
-		"apify": "^0.9.15",
-		"cheerio": "^1.0.0-rc.2",
-		"request-promise": "^4.2.2"
+		"apify": "^1.2.0"
 	},
 	"devDependencies": {
 		"eslint": "^5.8.0",
