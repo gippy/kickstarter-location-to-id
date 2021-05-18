@@ -1,3 +1,7 @@
+## 2021-05-18
+*Fixes*
+- Implemented BasicCrawler instance instead of "Do-While" loop;
+
 
 ## 2021-05-17
 *Fixes*
