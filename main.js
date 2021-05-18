@@ -5,9 +5,9 @@ Apify.main(async () => {
     const proxyConfiguration = await Apify.createProxyConfiguration();
     const requestQueue = await Apify.openRequestQueue();
     const input = await Apify.getValue('INPUT');
-    if (!input) log.error('Can not get input');
+    if (!input) throw new Error('Can not get input');
     const { query } = input;
-    if (!query || typeof query !== 'string') log.error('Query loaded from INPUT is empty or not a string.');
+    if (!query || typeof query !== 'string') throw new Error('Query loaded from INPUT is empty or not a string.');
     // let attempts = 20;
     // BASIC CRAWLER
     const url = `https://www.kickstarter.com/locations/search?searchable=true&term=${query}`;
@@ -18,16 +18,16 @@ Apify.main(async () => {
     log.info(`${url} was added to the queue`);
     const crawler = new Apify.BasicCrawler({
         requestQueue,
-        handleRequestFunction: async ({ request }) => {
+        handleRequestFunction: async ({ request, session }) => {
             const { body } = await Apify.utils.requestAsBrowser({
                 url: request.url,
-                proxyUrl: proxyConfiguration.newUrl(),
+                proxyUrl: proxyConfiguration.newUrl(session.id),
                 headers: {
                     accept: 'application/json',
                 },
             });
             const response = JSON.parse(body);
-            if (!response.locations) log.error('Response does not contain locations. Try again.');
+            if (!response.locations) throw new Error('Response does not contain locations. Try again.');
             // Parse the response and output it to console and key-value-store
             const places = response.locations.map((location) => ({
                 id: location.id,
